@@ -1,0 +1,831 @@
+
+*** Running vivado
+    with args -log main.vds -m64 -mode batch -messageDb vivado.pb -notrace -source main.tcl
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source main.tcl -notrace
+Command: synth_design -top main -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6775 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1040.914 ; gain = 154.137 ; free physical = 3080 ; free virtual = 7313
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:20]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '/home/uncertainmove/Document/logism/cpu/测试用例/benchmark.hex' is read successfully [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:72]
+INFO: [Synth 8-638] synthesizing module 'IF_ID' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/IF-ID.v:20]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'IF_ID' (1#1) [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/IF-ID.v:20]
+INFO: [Synth 8-638] synthesizing module 'controller' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/controller.v:19]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'controller' (2#1) [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/controller.v:19]
+INFO: [Synth 8-638] synthesizing module 'instruction_translate' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/instruction_translate.v:20]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'instruction_translate' (3#1) [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/instruction_translate.v:20]
+INFO: [Synth 8-638] synthesizing module 'regfiles' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/regfiles.v:20]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'regfiles' (4#1) [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/regfiles.v:20]
+INFO: [Synth 8-638] synthesizing module 'ID_EX' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/IDEX.v:20]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ID_EX' (5#1) [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/IDEX.v:20]
+INFO: [Synth 8-638] synthesizing module 'branch' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/branch.v:20]
+INFO: [Synth 8-256] done synthesizing module 'branch' (6#1) [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/branch.v:20]
+INFO: [Synth 8-638] synthesizing module 'ALU' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/ALU.v:20]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/ALU.v:72]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (7#1) [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/ALU.v:20]
+INFO: [Synth 8-638] synthesizing module 'EX_Mem' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/EXMem.v:20]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'EX_Mem' (8#1) [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/EXMem.v:20]
+INFO: [Synth 8-638] synthesizing module 'Mem_Wb' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/MemWb.v:20]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Mem_Wb' (9#1) [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/MemWb.v:20]
+INFO: [Synth 8-638] synthesizing module 'data_redirect' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/data_redirect.v:20]
+INFO: [Synth 8-256] done synthesizing module 'data_redirect' (10#1) [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/data_redirect.v:20]
+INFO: [Synth 8-638] synthesizing module 'load_use_check' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/load_use_check.v:20]
+INFO: [Synth 8-256] done synthesizing module 'load_use_check' (11#1) [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/load_use_check.v:20]
+INFO: [Synth 8-638] synthesizing module 'display' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/display.v:20]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'bcd_to_segment' [/home/uncertainmove/Document/dld-master/washmach_design/src/bcd_to_segment.v:4]
+INFO: [Synth 8-226] default block is never used [/home/uncertainmove/Document/dld-master/washmach_design/src/bcd_to_segment.v:11]
+INFO: [Synth 8-256] done synthesizing module 'bcd_to_segment' (12#1) [/home/uncertainmove/Document/dld-master/washmach_design/src/bcd_to_segment.v:4]
+WARNING: [Synth 8-567] referenced signal 'seg_data_1' should be on the sensitivity list [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/display.v:75]
+WARNING: [Synth 8-567] referenced signal 'seg_data_2' should be on the sensitivity list [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/display.v:75]
+WARNING: [Synth 8-567] referenced signal 'seg_data_3' should be on the sensitivity list [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/display.v:75]
+WARNING: [Synth 8-567] referenced signal 'seg_data_4' should be on the sensitivity list [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/display.v:75]
+WARNING: [Synth 8-567] referenced signal 'seg_data_5' should be on the sensitivity list [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/display.v:75]
+WARNING: [Synth 8-567] referenced signal 'seg_data_6' should be on the sensitivity list [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/display.v:75]
+WARNING: [Synth 8-567] referenced signal 'seg_data_7' should be on the sensitivity list [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/display.v:75]
+WARNING: [Synth 8-567] referenced signal 'seg_data_8' should be on the sensitivity list [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/display.v:75]
+INFO: [Synth 8-256] done synthesizing module 'display' (13#1) [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/display.v:20]
+INFO: [Synth 8-256] done synthesizing module 'main' (14#1) [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:20]
+WARNING: [Synth 8-3331] design instruction_translate has unconnected port instruction[31]
+WARNING: [Synth 8-3331] design instruction_translate has unconnected port instruction[30]
+WARNING: [Synth 8-3331] design instruction_translate has unconnected port instruction[29]
+WARNING: [Synth 8-3331] design instruction_translate has unconnected port instruction[28]
+WARNING: [Synth 8-3331] design instruction_translate has unconnected port instruction[27]
+WARNING: [Synth 8-3331] design instruction_translate has unconnected port instruction[26]
+WARNING: [Synth 8-3331] design controller has unconnected port instruction[25]
+WARNING: [Synth 8-3331] design controller has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design controller has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design controller has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design controller has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design controller has unconnected port instruction[11]
+WARNING: [Synth 8-3331] design controller has unconnected port instruction[10]
+WARNING: [Synth 8-3331] design controller has unconnected port instruction[9]
+WARNING: [Synth 8-3331] design controller has unconnected port instruction[8]
+WARNING: [Synth 8-3331] design controller has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design controller has unconnected port instruction[6]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1124.867 ; gain = 238.090 ; free physical = 2991 ; free virtual = 7227
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1124.867 ; gain = 238.090 ; free physical = 2990 ; free virtual = 7226
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/constrs_1/new/benchmark.xdc]
+WARNING: [Vivado 12-507] No nets matched 'choose[4444]'. [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/constrs_1/new/benchmark.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/constrs_1/new/benchmark.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/constrs_1/new/benchmark.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/constrs_1/new/benchmark.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1508.352 ; gain = 0.000 ; free physical = 2693 ; free virtual = 6924
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1508.352 ; gain = 621.574 ; free physical = 2689 ; free virtual = 6920
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1508.352 ; gain = 621.574 ; free physical = 2689 ; free virtual = 6920
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 1508.352 ; gain = 621.574 ; free physical = 2688 ; free virtual = 6920
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "regfile_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'ram_reg[257][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[258][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[259][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[260][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[261][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[262][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[263][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[264][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[265][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[266][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[267][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[268][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[269][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[270][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[271][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[272][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[273][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[274][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[275][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[276][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[277][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[278][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[279][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[280][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[281][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[282][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[283][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[284][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[285][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[286][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[287][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[288][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[289][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[290][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[291][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[292][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[293][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[294][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[295][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[296][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[297][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[298][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[299][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[300][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[301][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[302][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[303][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[304][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[305][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[306][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[307][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[308][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[309][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[310][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[311][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[312][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[313][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[314][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[315][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[316][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[317][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[318][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[319][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[320][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[321][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[322][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[323][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[324][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[325][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[326][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[327][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[328][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[329][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[330][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[331][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[332][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[333][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[334][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[335][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[336][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[337][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[338][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[339][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[340][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[341][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[342][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[343][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[344][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[345][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[346][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[347][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[348][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[349][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[350][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[351][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[352][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[353][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[354][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[355][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Synth 8-4471] merging register 'ram_reg[356][31:0]' into 'ram_reg[256][31:0]' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+INFO: [Common 17-14] Message 'Synth 8-4471' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5546] ROM "ram_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[32]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[33]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[34]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[35]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[36]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[37]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[38]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[39]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[40]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[41]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[42]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[43]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[44]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[45]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[46]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[47]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[48]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[49]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[50]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[51]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[52]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[53]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[60]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[61]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[62]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[63]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[64]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[65]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[66]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[67]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5544] ROM "lbu_data_Wb" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/ALU.v:75]
+WARNING: [Synth 8-327] inferring latch for variable 'result2_reg' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/ALU.v:76]
+WARNING: [Synth 8-327] inferring latch for variable 'of_reg' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/ALU.v:78]
+WARNING: [Synth 8-327] inferring latch for variable 'uof_reg' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/ALU.v:77]
+WARNING: [Synth 8-327] inferring latch for variable 'data_Mem' [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/main.v:247]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1508.352 ; gain = 621.574 ; free physical = 2667 ; free virtual = 6898
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 6     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 306   
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                5 Bit    Registers := 13    
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 22    
+	   4 Input     32 Bit        Muxes := 1     
+	1024 Input     32 Bit        Muxes := 1     
+	 220 Input     32 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 8     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 321   
+	  14 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module main 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 259   
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 15    
+	   4 Input     32 Bit        Muxes := 1     
+	1024 Input     32 Bit        Muxes := 1     
+	 220 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 257   
+Module IF_ID 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module regfiles 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 64    
+Module ID_EX 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	  14 Input      1 Bit        Muxes := 3     
+Module EX_Mem 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	               12 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+Module Mem_Wb 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	               10 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+Module bcd_to_segment 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      8 Bit        Muxes := 1     
+Module display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1508.352 ; gain = 621.574 ; free physical = 2666 ; free virtual = 6898
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP r_mul, operation Mode is: A*B.
+DSP Report: operator r_mul is absorbed into DSP r_mul.
+DSP Report: operator r_mul is absorbed into DSP r_mul.
+DSP Report: Generating DSP r_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator r_mul is absorbed into DSP r_mul.
+DSP Report: operator r_mul is absorbed into DSP r_mul.
+DSP Report: Generating DSP r_mul, operation Mode is: A*B.
+DSP Report: operator r_mul is absorbed into DSP r_mul.
+DSP Report: operator r_mul is absorbed into DSP r_mul.
+DSP Report: Generating DSP r_mul, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator r_mul is absorbed into DSP r_mul.
+DSP Report: operator r_mul is absorbed into DSP r_mul.
+WARNING: [Synth 8-3936] Found unconnected internal register 'mem_wb/control_reg_reg' and it is trimmed from '10' to '6' bits. [/home/uncertainmove/Document/logism/pipeline/pipeline.srcs/sources_1/new/MemWb.v:72]
+WARNING: [Synth 8-3331] design controller has unconnected port instruction[25]
+WARNING: [Synth 8-3331] design controller has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design controller has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design controller has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design controller has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design controller has unconnected port instruction[11]
+WARNING: [Synth 8-3331] design controller has unconnected port instruction[10]
+WARNING: [Synth 8-3331] design controller has unconnected port instruction[9]
+WARNING: [Synth 8-3331] design controller has unconnected port instruction[8]
+WARNING: [Synth 8-3331] design controller has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design controller has unconnected port instruction[6]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1508.352 ; gain = 621.574 ; free physical = 2664 ; free virtual = 6900
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1508.352 ; gain = 621.574 ; free physical = 2664 ; free virtual = 6900
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\if_id/inst_reg_reg[30] )
+INFO: [Synth 8-3886] merging instance 'mem_wb/lbu_choose_reg_reg[0]' (FD) to 'mem_wb/r_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mem_wb/lbu_choose_reg_reg[1]' (FD) to 'mem_wb/r_reg_reg[1]'
+WARNING: [Synth 8-3332] Sequential element (ir_reg_reg[31]) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (ir_reg_reg[30]) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (ir_reg_reg[29]) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (ir_reg_reg[28]) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (ir_reg_reg[27]) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (ir_reg_reg[26]) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (rd_reg_reg[4]) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (rd_reg_reg[3]) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (rd_reg_reg[2]) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (rd_reg_reg[1]) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (rd_reg_reg[0]) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (control_reg_reg[19]) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (control_reg_reg[18]) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (control_reg_reg[17]) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (control_reg_reg[16]) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[31]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[30]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[29]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[28]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[27]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[26]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[25]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[24]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[23]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[22]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[21]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[20]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[19]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[18]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[17]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[16]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[15]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[14]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[13]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[12]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[11]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[10]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[9]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[8]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[7]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[6]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[5]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[4]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[3]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[2]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[1]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (result2_reg[0]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (of_reg) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (uof_reg) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (ex_mem/control_reg_reg[11]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ex_mem/control_reg_reg[10]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ex_mem/control_reg_reg[9]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ex_mem/control_reg_reg[8]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ex_mem/control_reg_reg[6]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (mem_wb/control_reg_reg[4]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (if_id/inst_reg_reg[30]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (_clk_reg[21]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (_clk_reg[22]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (_clk_reg[23]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (_clk_reg[24]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (_clk_reg[25]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (_clk_reg[26]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (_clk_reg[27]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (_clk_reg[28]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (_clk_reg[29]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (_clk_reg[30]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (_clk_reg[31]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][31]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][30]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][29]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][28]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][27]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][26]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][25]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][24]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][23]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][22]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][21]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][20]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][19]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][18]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][17]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][16]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][15]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][14]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][13]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][12]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][11]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][10]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][9]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][8]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][7]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][6]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][5]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][4]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][3]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][2]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][1]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ram_reg[256][0]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (mem_wb/lbu_choose_reg_reg[0]) is unused and will be removed from module main.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'id_ex/ir_reg_reg[8]' (FD) to 'id_ex/imm_offset_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'id_ex/ir_reg_reg[9]' (FD) to 'id_ex/imm_offset_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'id_ex/ir_reg_reg[10]' (FD) to 'id_ex/imm_offset_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'id_ex/ir_reg_reg[11]' (FD) to 'id_ex/imm_offset_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'id_ex/ir_reg_reg[12]' (FD) to 'id_ex/imm_offset_reg_reg[12]'
+INFO: [Synth 8-3886] merging instance 'id_ex/ir_reg_reg[13]' (FD) to 'id_ex/imm_offset_reg_reg[13]'
+INFO: [Synth 8-3886] merging instance 'id_ex/ir_reg_reg[14]' (FD) to 'id_ex/imm_offset_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'id_ex/ir_reg_reg[15]' (FD) to 'id_ex/imm_offset_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'id_ex/ir_reg_reg[1]' (FD) to 'id_ex/imm_offset_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'id_ex/ir_reg_reg[2]' (FD) to 'id_ex/imm_offset_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'id_ex/ir_reg_reg[0]' (FD) to 'id_ex/imm_offset_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'id_ex/ir_reg_reg[3]' (FD) to 'id_ex/imm_offset_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'id_ex/ir_reg_reg[4]' (FD) to 'id_ex/imm_offset_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'id_ex/ir_reg_reg[6]' (FD) to 'id_ex/imm_offset_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'id_ex/ir_reg_reg[7]' (FD) to 'id_ex/imm_offset_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'id_ex/ir_reg_reg[5]' (FD) to 'id_ex/imm_offset_reg_reg[5]'
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:00 . Memory (MB): peak = 1508.352 ; gain = 621.574 ; free physical = 2634 ; free virtual = 6871
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:00 ; elapsed = 00:01:00 . Memory (MB): peak = 1508.352 ; gain = 621.574 ; free physical = 2634 ; free virtual = 6871
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:11 ; elapsed = 00:01:12 . Memory (MB): peak = 1525.352 ; gain = 638.574 ; free physical = 2642 ; free virtual = 6857
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:13 . Memory (MB): peak = 1532.352 ; gain = 645.574 ; free physical = 2674 ; free virtual = 6889
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:18 ; elapsed = 00:01:19 . Memory (MB): peak = 1646.273 ; gain = 759.496 ; free physical = 2666 ; free virtual = 6873
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:18 ; elapsed = 00:01:19 . Memory (MB): peak = 1646.273 ; gain = 759.496 ; free physical = 2666 ; free virtual = 6873
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:18 ; elapsed = 00:01:19 . Memory (MB): peak = 1646.273 ; gain = 759.496 ; free physical = 2666 ; free virtual = 6873
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:20 ; elapsed = 00:01:20 . Memory (MB): peak = 1646.273 ; gain = 759.496 ; free physical = 2666 ; free virtual = 6872
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:20 ; elapsed = 00:01:20 . Memory (MB): peak = 1646.273 ; gain = 759.496 ; free physical = 2666 ; free virtual = 6872
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:21 ; elapsed = 00:01:21 . Memory (MB): peak = 1646.273 ; gain = 759.496 ; free physical = 2665 ; free virtual = 6872
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:21 ; elapsed = 00:01:21 . Memory (MB): peak = 1646.273 ; gain = 759.496 ; free physical = 2665 ; free virtual = 6872
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:21 ; elapsed = 00:01:22 . Memory (MB): peak = 1646.273 ; gain = 759.496 ; free physical = 2661 ; free virtual = 6867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:21 ; elapsed = 00:01:22 . Memory (MB): peak = 1646.273 ; gain = 759.496 ; free physical = 2660 ; free virtual = 6867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     4|
+|2     |CARRY4  |   365|
+|3     |DSP48E1 |     3|
+|4     |LUT1    |   153|
+|5     |LUT2    |   284|
+|6     |LUT3    |   379|
+|7     |LUT4    |   229|
+|8     |LUT5    |  1363|
+|9     |LUT6    |  3780|
+|10    |MUXF7   |  1393|
+|11    |MUXF8   |   693|
+|12    |FDRE    |  9810|
+|13    |LD      |    64|
+|14    |IBUF    |    17|
+|15    |OBUF    |    16|
++------+--------+------+
+
+Report Instance Areas: 
++------+-----------+---------+------+
+|      |Instance   |Module   |Cells |
++------+-----------+---------+------+
+|1     |top        |         | 18553|
+|2     |  DISPLAY  |display  |    49|
+|3     |  REGFILES |regfiles |  1985|
+|4     |  alu      |ALU      |   447|
+|5     |  ex_mem   |EX_Mem   |  4422|
+|6     |  id_ex    |ID_EX    |  2347|
+|7     |  if_id    |IF_ID    |   426|
+|8     |  mem_wb   |Mem_Wb   |   206|
++------+-----------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:21 ; elapsed = 00:01:22 . Memory (MB): peak = 1646.273 ; gain = 759.496 ; free physical = 2660 ; free virtual = 6867
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 134 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:11 ; elapsed = 00:01:11 . Memory (MB): peak = 1646.273 ; gain = 288.871 ; free physical = 2660 ; free virtual = 6867
+Synthesis Optimization Complete : Time (s): cpu = 00:01:21 ; elapsed = 00:01:22 . Memory (MB): peak = 1646.281 ; gain = 759.504 ; free physical = 2661 ; free virtual = 6868
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 449 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  LD => LDCE: 64 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+266 Infos, 143 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:23 ; elapsed = 00:01:23 . Memory (MB): peak = 1646.281 ; gain = 684.949 ; free physical = 2645 ; free virtual = 6850
+report_utilization: Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.19 . Memory (MB): peak = 1678.289 ; gain = 0.000 ; free physical = 2615 ; free virtual = 6826
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 22 21:45:50 2017...
